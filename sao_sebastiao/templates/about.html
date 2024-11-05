@@ -1,0 +1,77 @@
+{% extends 'background.html' %}
+{% load static i18n %}
+{% block head_title %}
+    {% trans 'Sobre Nós - Pharma Express' %}
+{% endblock head_title %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock extra_head %}
+{% block content %}
+    <main>
+        <div class="banner-page sobre-banner">
+            <div class="line"></div>
+            <h1>Sobre Nós</h1>
+            <div class="line"></div>
+        </div>
+        <div class="section about">
+            <div class="about-text-img">
+                <img class='middle-image middle-img-text middle-img-text-left' src="{% static 'img/Medicamentos.jpg' %}" alt="">
+            </div>
+            
+            <div class="text-box">
+                <h4 class="title">Distribuição de Medicamentos com Agilidade e Confiabilidade</h4>
+                <div class="line"></div>
+                <p class='text justify'>
+                    Na Pharma Express, entendemos que cada segundo no setor da saúde pode fazer toda a diferença. 
+                    É por isso que nossa missão vai além da distribuição de medicamentos; 
+                    somos o aliado em quem você pode confiar para que sua operação funcione de maneira impecável. 
+                    Sabemos o quão essencial é garantir que farmácias, clínicas e hospitais 
+                    estejam sempre abastecidos com os produtos certos, no momento certo.
+                </p>
+                <p class='text justify'>
+                    Estamos comprometidos em ser mais do que um fornecedor. Queremos ser o parceiro que entende suas prioridades, 
+                    antecipando suas necessidades para que você nunca tenha que se preocupar. Nossa equipe dedica-se a fornecer soluções personalizadas, 
+                    que não só atendem às suas expectativas, mas as superam, garantindo uma experiência tranquila, confiável e eficiente.
+                </p>
+            </div>
+        </div>
+        <div class="section about gray">
+            <div class="text-box">
+                <h4 class="title">Excelência Logística e Compromisso com a Saúde</h4>
+                <div class="line"></div>
+                <p class='text justify'>
+                    Nossa rede logística foi projetada para ser ágil e eficaz, permitindo que você e sua equipe trabalhem com a confiança que a saúde exige. 
+                    Cada entrega é tratada com a máxima seriedade, assegurando que você receba seus produtos de forma rápida e segura, sempre cumprindo prazos 
+                    rigorosos e mantendo os padrões de qualidade que são essenciais para o seu trabalho.
+                </p>
+                <p class='text justify'>
+                    Mais do que distribuir, estamos ao seu lado em cada etapa do processo logístico. Com uma equipe de profissionais experientes e profundo conhecimento 
+                    do setor de saúde, oferecemos soluções adaptadas às suas necessidades específicas, proporcionando uma experiência personalizada que realmente faz a diferença.
+                </p>
+            </div>
+            <div class="about-text-img">
+                <img class='middle-image middle-img-text middle-img-text-right' src="{% static 'img/Distribuicao.jpeg' %}" alt="">
+            </div>
+            
+        </div>
+        <section class="principios">
+            <div class="principio">
+                <h4>Missão</h4>
+                <p>Entregamos soluções rápidas e eficientes na distribuição de medicamentos.</p>
+            </div>
+            <div class="principio">
+                <h4>Visão</h4>
+                <p>Transformar a distribuição em uma experiência personalizada e eficiente.</p>
+            </div>
+            <div class="principio">
+                <h4>Valores</h4>
+                <p>Agilidade: Soluções rápidas para as necessidades do setor.</p>
+                <p>Transparência: Relação baseada na honestidade.</p>
+                <p>Flexibilidade: Adaptação às demandas dos clientes.</p>
+            </div>
+        </section>
+    </main>
+{% endblock content%}
+{% block script %}
+    <script src="{% static 'js/open_list.js' %}"></script>
+{% endblock script %}

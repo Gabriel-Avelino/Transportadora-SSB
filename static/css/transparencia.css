@@ -1,0 +1,10 @@
+.transparencia{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/Transparencia.jpeg);
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.documentos{
+    padding: 5% 10%
+}
+

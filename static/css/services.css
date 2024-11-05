@@ -1,0 +1,39 @@
+.servicos-banner{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/servicos.jpeg);
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.atividades-destaque{
+    padding: 5% 10% 10%;
+}
+
+.atividades-destaque h2{
+    margin-bottom: 10px;
+    color: #b22c2c;;
+    font-weight: 900;
+}
+
+.atividades-destaque .line{
+    margin-bottom: 50px;
+    width: 40%;
+    border: 1px solid #b22c2c;
+    min-width: 430px;
+}
+
+.atividades-destaque h3{
+    margin-bottom: 30px;
+    color: #000;;
+    font-weight: 900;
+}
+
+.atividades-destaque p{
+    margin-bottom: 30px;
+}
+
+.atividades-destaque ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}

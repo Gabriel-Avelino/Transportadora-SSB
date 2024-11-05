@@ -1,0 +1,121 @@
+.contato-banner{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/Contato.png);
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato .info{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 65px 15%;
+    background-color: #fff;
+}
+
+.info-contato h3{
+    font-size: 24px;
+    color: #34ABB7;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.info-contato .line{
+    width: 80%;
+    border: 1px solid #b22c2c;
+    margin: 5px 0 40px;
+}
+
+.info-contato .list{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.subtitle-contact{
+    font-size: 20px;
+    color: #34ABB7;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.icon-contact{
+    width: 30px;
+}
+
+.redes .icon-contact {
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.redes .icon-contact:hover {
+    transform: scale(1.1);
+}
+
+.contato .info .text{
+    color: #223874;
+    font-weight: 900;
+    text-align: justify;
+}
+
+.contato .form-contact{
+    background-color: #34ABB7;
+    margin-top: -235px;
+    padding: 300px 15% 10%;
+}
+
+.contato .form-contact h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.endereco-div{
+    display: grid;
+}
+
+.endereco-div .contact-list{
+    margin-bottom: 50px;
+}
+
+.endereco-div .list{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.endereco-div iframe{
+    justify-self: center;
+}
+
+.form-contact .line{
+    width: 60%;
+    border: 1px solid #fff;
+    margin: 5px 0 40px;
+}
+
+.contato .form-contact .text {
+    color: #fff;
+    font-weight: 900;
+    text-align: justify;
+}
+
+.form-contact .fale-conosco{
+    width: 100%;
+    background-color: #A5A4A4;
+    padding: 7% 7%;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.fale-conosco .form{
+    margin: 0;
+}

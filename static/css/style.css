@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Metropolis';
+}
+
+.copyright p{
+    text-align: center;
+}
+
+p{
+    margin: 0;
+    font-size: 16px;
+}
+
+header{
+    min-height: 90px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10000;
+    transition: 1s all ease;
+    box-shadow: 0px 3px 12px #00000029;
+}
+
+header .container-fluid{
+    flex-direction: row;
+    width: 100%;
+    min-height: 90px;
+}
+
+.container-fluid .row{
+    min-height: 90px;
+}
+
+.navbar-nav{
+    width: 100%;
+}
+
+.nav-link{
+    color: #34ABB7;
+    transition: all ease 1s;
+    text-align: center;
+}
+.nav-link a{
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+.nav-link:hover{
+    color: #223874;
+    transform: scale(1.1);
+}
+
+.logo{
+    width: 100%;
+    max-width: 200px;
+}
+nav{
+    justify-self: center;
+    width: 100%;
+}
+nav ul{
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #000;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-brand{
+    width: 30%;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+}
+
+footer{
+    position: relative;
+    z-index: 999;
+    align-self: flex-end;
+    background-color: #fff;
+    color: #81CCDE;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer .container{
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    padding: 4% 10% 2%;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-footer{
+    font-family: "Inter", sans-serif;
+}
+
+h2.title-footer{
+    color: #34ABB7;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+h3.title-footer{
+    color: #34ABB7;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.map{
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #34ABB7;
+    color: #fff;
+    font-weight: 900;
+    padding: 40px 5%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+footer .contact p{
+    font-size: 14px;
+    color: #223874;
+}
+
+.contact p{
+    font-size: 14px;
+    color: #223874;
+    font-weight: 900;
+}
+
+.contact-list .contact a{
+    max-width: 455px;
+    width: 100%;
+    font-size: 14px;
+    color: #223874;
+    text-decoration: none;
+}
+
+.contact a{
+    font-size: 14px;
+    color: #223874;
+    text-decoration: none;
+    font-weight: 900;
+    transition: all ease .2s;
+}
+
+
+.contact a:hover{
+    color: #81CCDE;
+    text-decoration: none;
+}
+
+footer .contact a:hover{
+    color: #81CCDE;
+    text-decoration: none;
+}
+
+.contact-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.division{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0;
+}
+
+.division.right{
+    border-left: 1px solid #81CCDE;
+    padding-left: 10%;
+}
+
+.right .klx_logo{
+    margin: 30px ;
+    max-width: 220px;
+}
+
+.top{
+    margin-top: 50px;
+}
+
+.banner-inicial{
+    position: relative;
+    background-color: #81CCDE;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 999;
+}
+
+.img-banner{
+    position: absolute;
+    top: -280px;
+    left: -200px;
+    z-index: 1000;
+    width: 70%;
+    background-image: url(../img/familia-funcional-resp.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    max-width: 870px;
+}
+
+
+.video{
+    display: flex;
+    padding: 80px 10% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    border-radius: 15px;
+    width: 70%;
+}
+
+.item{
+    width: 100%;
+}
+
+.banner-item{
+    position: relative;
+    background-color: #34ABB7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 180px 10% 120px;
+    z-index: 999;
+    clip-path: ellipse(90% 70% at 50% 30%);
+}
+
+.banner-inicial h1{
+    font-size: 32px;
+    max-width: 400px;
+    font-weight: 900;
+    margin-left: 60%;
+    color: #fff;
+    align-self: self-end;
+}
+
+.quem_somos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 10% 3%;
+    position: relative;
+    background-color: #81CCDE;
+    min-height: 650px;
+}
+
+.sobre{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.sobre-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    z-index: 999;
+    object-fit: cover;
+}
+
+.quem-text{
+    display: grid;
+    width: 60%;
+    padding-right: 10%;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    z-index: 999;
+}
+
+.quem-text h1{
+    font-weight: 900;
+    font-size: 40px;
+    color: #223874;
+    justify-self: center;
+}
+
+.quem-text .line{
+    width: 40%;
+    border: 2px #34ABB7 solid;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+
+.quem-text p{
+    font-size: 15px;
+    color: #223874;
+    text-align: justify;
+}
+
+.quem-text button{
+    justify-self: center;
+}
+
+img{
+    width: 100%;
+}
+
+.servicos{
+    display: grid;
+    padding: 5% 10% 0%;
+}
+
+.servicos h2{
+    font-size: 32px;
+    color: #223874;
+    font-weight: 900;
+}
+
+.servicos .line{
+    width: 30%;
+    margin-bottom: 30px;
+    border: 1px solid #34ABB7;
+}
+
+.servicos p{
+    color: #223874;
+    font-size: 16px;
+}
+
+.servicos .container{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.noticias .container{
+    position: relative;
+    max-width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicos button{
+    justify-self: center;
+}
+
+.servico {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 50%; /* Torna o elemento circular */
+    width: 230px;
+    height: 230px;
+    transition: .5s all ease;
+    overflow: hidden; /* Garante que nada saia dos limites do círculo */
+}
+
+.servico .servico-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Mantém o formato circular da imagem */
+}
+
+.clinica{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/clinica.webp);
+}
+
+.hospitais{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/hospitais.png);
+}
+
+.farmacias{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/farmacias.jpeg);
+}
+
+.servico .servico-name{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/0.34;
+    background-color: #34ABB7;
+    padding: 20px 20px;
+    border-radius: 0 0 15px;
+}
+
+.limpeza{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/limpeza-urbana.jpg);
+}
+
+.residuos{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/gestao-residuos.jpg);
+}
+
+.consciencia{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/consciencia-socioambiental.jpg);
+}
+
+.infraestrutura{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 150%), url(../img/obras-de-infraestrutura.jpg);
+}
+
+.servico p{
+    width: 60%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.galery-wrapper {
+    min-width: 100%;
+    position: relative;
+    overflow-x: auto;
+}
+.galery-wrapper::-webkit-scrollbar {
+    width: 1px; /* Largura da barra de rolagem vertical */
+    height: 1px; /* Altura da barra de rolagem horizontal */
+}
+
+.galery {
+    position: relative;
+    width: 200%;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.noticias{
+    background-color: #A5A4A4;
+    min-height: 600px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+    padding-bottom: 10%;
+}
+
+.noticias .aviso{
+    align-self: center;
+    justify-self: center;
+    color: #223874;
+}
+
+.noticias h1{
+    margin: 80px 10% 20px;
+    font-size: 32px;
+    color: #223874;
+}
+
+.noticias .line{
+    margin: 0px 10% 40px;
+    width: 245px;
+    border: 1px solid #34ABB7;
+}
+
+.noticia h4{
+    max-width: 300px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0 5% 10px;
+}
+
+.sugestao.noticia.thumb {
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+    align-self: center;
+    aspect-ratio: 1 / 0.5;
+}
+
+.noticia {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.slide .noticia{
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: transparent;
+    cursor: pointer;
+}
+
+.noticia p{
+    color: #888;
+    margin: 0 5% 10px;
+    font-size: 11px;
+}
+
+.noticia a {
+    width: 100%;
+    text-decoration: none;
+    height: 70%;
+}
+
+.noticia,
+.noticia h4,
+.noticia p {
+    transition: color 0.2s ease;
+}
+
+.noticia:hover,
+.noticia:hover h4,
+.noticia:hover p {
+    color: #34ABB7;
+}
+
+.thumb{
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+    align-self: center;
+    aspect-ratio: 1 / 2;
+}
+
+.dropdown {
+    width: 100%;
+    cursor: pointer;
+    color: #223874;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #F1F1F1;
+    transition: all ease 0.5s;
+}
+
+.dropdown:hover {
+    color: #34ABB7;
+}
+
+.border{
+    border: 1px solid #ffffff;
+}
+
+.dropdown-content {
+    width: 100%;
+    display: none;
+    padding: 0 10px; /* Início com padding 0 para transição suave */
+    border-top: 1px solid #F1F1F1;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    border-top: none;
+    background-color: #CCC8C8;
+    overflow: hidden; /* Adicionar overflow escondido para transição suave */
+    max-height: 0;
+    transition: 0.2s all ease;
+    flex-direction: column;
+}
+
+.dropdown-content.open {
+    max-height: 500px; /* Ajustar conforme necessário */
+    padding: 25px; /* Restaurar padding para transição suave */
+    gap: 15px;
+}
+
+.doc-link{
+    color: #000;
+    text-decoration: none;
+}
+
+.doc-link:hover{
+    color: #223874;
+    text-decoration: underline;
+}
+
+.banner-page{
+    position: relative;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    padding: 180px 10% 120px;
+    z-index: 999;
+    color: #fff;
+    text-align: center;
+    clip-path: ellipse(70% 70% at 50% 30%);
+}
+
+.banner-page h1 {
+    font-weight: 900;
+    margin: 0;
+}
+
+.banner-page p {
+    font-size: 16px;
+    width: 50%;
+}
+
+.banner-page .line{
+    width: 15%;
+    border: 1px #fff solid;
+    margin: 0 5%
+}
+
+.ocultar {
+    display: none;
+}
+
+.popUp {
+    width: 100%;
+    display: block; 
+    overflow: hidden; 
+    max-height: 0;
+    transition: 0.3s all ease;
+}
+
+.popUp.open {
+    max-height: 1000px;
+    padding: 50px 0;
+}
+
+.popUp.closing {
+    max-height: 0;
+}
+
+.services-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.2s all ease;
+}
+
+.middle-text{
+    padding: 0 5%;
+}
+
+.middle-text p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    text-align: justify;
+}
+
+.middle-text .line{
+    width: 45%;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px #b22c2c solid;
+    margin: 5px 0 30px;
+}
+
+.middle-text h2{
+    font-size: 26px;
+    font-weight: 400;
+    color: #000
+}
+
+.middle-text ul{
+    margin-top: 20px;
+}

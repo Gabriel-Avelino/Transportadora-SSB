@@ -1,0 +1,148 @@
+.sobre-banner{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/Sobre.jpeg);
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.section{
+    min-height: 250px;
+}
+
+.section.about {
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    gap: 5%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.section.about .line {
+    border: 1px solid #34ABB7;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section.about .middle-img-text {  
+    width: 50%;
+    max-width: 600px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.section.about .middle-img-text-left{
+    left: -15%;
+    top: 30%;
+}
+
+.section.about .middle-img-text-right{
+    background-image: url(../img/motorista.jpg);
+    background-position: right 0;
+    position: absolute;
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    right: -10%;
+    top: -25%;
+    height: auto;
+}
+
+.section.about .about-text-img{
+    flex: 1;
+    aspect-ratio: 1/1;
+}
+
+.section.ideais {
+    background-color: #815E5E;
+    width: 100%;
+    display: flex;
+    padding: 0 10% 0 0;
+    gap: 5%;
+}
+
+.principios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+
+.principio{
+    background-color: #34ABB7;
+    background-image: url(../img/Grafismo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 3%;
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+}
+
+.principio h4{
+    align-self: center;
+    font-size: 18px;
+    color: #223874;
+    margin-bottom: 15px;
+}
+
+.principio p{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    text-justify: inter-ideograph;
+    margin: 0;
+}
+
+.valores{
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.finally{
+    color: #000;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.section.about .text-box{
+    z-index: 999;
+    background-color: #fff;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    gap: 15px;
+    text-align: justify;
+}
+
+.text-box .text{
+    color: #223874;
+}
+
+.section.about.gray{
+    min-height: 500px;
+    align-content: center;
+    padding: 0% 10% 0;
+    background-color: #A5A4A4;
+    flex-direction: row;
+}
+
+.section.about.gray .text-box{
+    background-color: #A5A4A4;
+}
+
+.text-box .title{
+    font-weight: 900;
+    max-width: 85%;
+    color: #223874;
+    margin: 0;
+}

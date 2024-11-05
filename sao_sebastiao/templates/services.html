@@ -1,0 +1,138 @@
+{% extends 'background.html' %}
+{% load static i18n %}
+{% block head_title %}
+    {% trans 'Serviços - Rockefeller Ambiental' %}
+{% endblock head_title %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+{% endblock extra_head %}
+{% block content %}
+    <main>
+        <div class="banner-page servicos-banner">
+            <div class="line"></div>
+            <h1>Serviços</h1>
+            <div class="line"></div>
+        </div>
+        <div class="section services">
+            <div class="info servicos">
+                <div class="container">
+                    <div class="Limpeza servico click" onclick="togglePopUp()">
+                        <div class="servico-img limpeza"></div>
+                        <div class="servico-name">
+                            <p>Limpeza Pública</p>
+                        </div>
+                    </div>
+                    <div class="Residuos servico click" onclick="togglePopUp()">
+                        <div class="servico-img residuos"></div>
+                        <div class="servico-name">
+                            <p>Gestão de Resíduos Sólidos</p>
+                        </div>
+                    </div>
+                    <div class="Socioambiental servico click" onclick="togglePopUp()">
+                        <div class="servico-img consciencia"></div>
+                        <div class="servico-name">
+                            <p>Consciência Socioambiental</p>
+                        </div>
+                    </div>
+                    <div class="Obra servico click" onclick="togglePopUp()">
+                        <div class="servico-img infraestrutura"></div>
+                        <div class="servico-name">
+                            <p>Obras de Infraestrutura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="abrirLimpeza popUp ocultar">
+                <div class="services-info">
+                    <img src="{% static 'img/servico-limpeza.jpg' %}" alt="" class="middle-image">
+                    <div class="middle-text">
+                        <h2>
+                            Limpeza Pública
+                        </h2>
+                        <div class="line"></div>
+                        <p>
+                            Na Rockefeller Ambiental, estamos dedicados a transformar seu ambiente em um espaço mais limpo, seguro e agradável para todos. Com nossa expertise, realizamos a coleta eficiente de diversos resíduos sólidos urbanos – desde o lixo doméstico até os recicláveis e resíduos especiais.
+                        </p>
+                        <p>
+                            Oferecendo serviços de varrição, limpeza e lavagem meticulosa de ruas, praças e espaços públicos. Nossa missão é garantir que sua comunidade desfrute de ambientes impecáveis, onde o bem-estar é promovido diariamente.
+                        </p>
+                        <p>
+                            E quando falamos em bem-estar, não esquecemos da natureza que nos rodeia. Cuidamos carinhosamente da limpeza de parques e jardins, preservando cada canto de beleza natural. Ao escolher a Rockefeller Ambiental, você está escolhendo um compromisso com um futuro mais limpo e sustentável.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="abrirResiduos popUp ocultar">
+                <div class="services-info">
+                    <img src="{% static 'img/residuos.jpg' %}" alt="" class="middle-image">
+                    <div class="middle-text">
+                        <h2>
+                            Gestão de Resíduos Sólidos
+                        </h2>
+                        <div class="line"></div>
+                        <p>
+                            Acreditamos que a gestão de resíduos sólidos é um pilar crucial para um futuro mais sustentável. Nossa abordagem envolve estratégia e ação, começando com a elaboração de planos estratégicos detalhados. Identificamos minuciosamente as fontes de geração de resíduos, permitindo-nos propor soluções inovadoras e sustentáveis para sua destinação. A implantação e operação de sistemas de coleta seletiva são parte fundamental do nosso compromisso para promover a separação adequada dos materiais recicláveis, abrindo caminho para a reciclagem e a transformação de resíduos em recursos valiosos.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="abrirSocioambiental popUp ocultar">
+                <div class="services-info">
+                    <img src="{% static 'img/reciclagem.jpg' %}" alt="" class="middle-image">
+                    <div class="middle-text">
+                        <h2>
+                            Consciência Socioambiental
+                        </h2>
+                        <div class="line"></div>
+                        <p>
+                            Na Rockefeller Ambiental, acreditamos que a conscientização é a semente de uma mudança duradoura. Realizamos campanhas educativas e projetos de conscientização para empoderar nossa comunidade em relação ao meio ambiente. Realizamos campanhas educativas e projetos de conscientização sobre temas relacionados ao meio ambiente, incentivando práticas sustentáveis e responsáveis na comunidade. Promovemos ações e eventos que envolvem a participação da comunidade em atividades socioambientais, fortalecendo o senso de responsabilidade coletiva em relação ao meio ambiente. Estabelecemos parcerias com instituições e organizações para desenvolver projetos conjuntos que promovam a preservação ambiental e o desenvolvimento social.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="abrirObra popUp services-info ocultar">
+                    <img src="{% static 'img/pavimentacao.jpg' %}" alt="" class="middle-image">
+                    <div class="middle-text">
+                        <h2>
+                            Obras de Infraestrutura
+                        </h2>
+                        <div class="line"></div>
+                        <p>
+                            Construindo bases sólidas para um amanhã.
+                        </p>
+                        <p>
+                            Nossa expertise abrange projetos de todos os tamanhos, desde pequenas intervenções até empreendimentos de grande porte. Com um foco inabalável na qualidade, segurança e respeito ao meio ambiente, executamos obras de infraestrutura que moldam o presente e o futuro.
+                        </p>
+                        <p>
+                            Nossa dedicação não termina com a conclusão das construções. Oferecemos serviços de manutenção preventiva e corretiva em infraestruturas já existentes, garantindo a durabilidade e a funcionalidade ao longo do tempo. Acreditamos que uma infraestrutura bem mantida é essencial para a sustentabilidade e a segurança de cada projeto.
+                        </p>
+                        <p>
+                            Na Rockefeller Ambiental, nossa paixão pela construção vai além da estética – priorizamos a qualidade e a sustentabilidade em cada projeto. Elaboramos projetos detalhados de infraestrutura, considerando não apenas as melhores práticas de engenharia e arquitetura, mas também as soluções mais sustentáveis.
+                        </p>
+                    </div>
+            </section>
+        </div>
+        <section class="atividades-destaque">
+            <h2>Atividades de Destaque</h2>
+            <div class="line"></div>
+            <h3>Limpeza Urbana</h3>
+            <p>A limpeza urbana é fundamental para a saúde pública e o bem-estar das comunidades. Na Rockefeller Ambiental utilizamos tecnologias avançadas e práticas sustentáveis para garantir que nossas cidades permaneçam limpas e organizadas. Nossos serviços incluem:</p>
+            <ul>
+                <li><b>Coleta e Destinação de Resíduos:</b> Realizamos a coleta eficiente e responsável de resíduos sólidos, com foco na reciclagem e na destinação adequada de materiais descartáveis, contribuindo para a redução do impacto ambiental.</li>
+                <li><b>Varrição e Manutenção de Vias Públicas:</b> Nossas equipes estão equipadas para executar a varrição manual e mecanizada das ruas, garantindo que todos os espaços urbanos sejam mantidos limpos e agradáveis.</li>
+                <li><b>Limpeza de Espaços Públicos:</b> Praças, parques e áreas de lazer são constantemente monitorados e limpos, proporcionando ambientes seguros e convidativos para toda a população.</li>
+            </ul>
+            <h3>Asfaltos</h3>
+            <p>A infraestrutura viária é vital para o desenvolvimento urbano e econômico. Nossa atuação na área de asfalto é focada na durabilidade e qualidade, sempre priorizando técnicas que minimizem os impactos ambientais. Entre os serviços que oferecemos estão:</p>
+            <ul>
+                <li><b>Pavimentação e Recapeamento:</b> Realizamos a pavimentação de novas vias e o recapeamento de ruas e avenidas existentes, utilizando materiais de alta qualidade que garantem maior durabilidade e resistência ao tráfego intenso.</li>
+                <li><b>Manutenção de Vias:</b> Nossa equipe especializada executa reparos e manutenção em pavimentos deteriorados, assegurando que as vias permaneçam seguras e em boas condições de uso.</li>
+                <li><b>Sinalização Viária:</b> Complementamos nossos serviços de pavimentação com a instalação de sinalização horizontal e vertical, essencial para a organização do trânsito e a segurança dos motoristas e pedestres.</li>
+            </ul>
+            <p>Na Rockefeller Ambiental, transformamos as cidades em locais melhores para  viver. Se você deseja saber mais sobre nossos serviços de Limpeza Urbana e Asfalto, ou se precisa de uma solução personalizada para sua comunidade, entre em contato conosco. Juntos, podemos construir um futuro mais limpo e sustentável.</p>
+        </section>
+    </main>
+{% endblock content%}
+{% block script %}
+    <script src="{% static 'js/services.js' %}"></script>
+{% endblock script %}

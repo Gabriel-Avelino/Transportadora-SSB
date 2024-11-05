@@ -1,0 +1,40 @@
+.trabalho-banner{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/trabalho-banner.jpeg);
+    background-position-x: center;
+    background-position-y: 0;
+}
+
+.work-form{
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-form h2{
+    font-weight: 900;
+    color: #b22c2c;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.work-form p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.work-form .form{
+    width: 70%;
+}
+
+.work-form .input{
+    border: 2px solid #3E445B;
+}
+
+.work-form .form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #000;
+}

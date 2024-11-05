@@ -1,0 +1,168 @@
+{% extends 'background.html' %}
+{% load static i18n %}
+{% block head_title %}
+    {% trans 'Contato - Pharma Express' %}
+{% endblock head_title %}
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/contato.css' %}">
+{% endblock extra_head %}
+{% block content %}
+    <main>
+        <div class="banner-page contato-banner">
+            <div class="line"></div>
+            <h1>
+                Contato
+            </h1>
+            <div class="line"></div>
+        </div>
+        <section class="contato">
+            <div class="info">
+                <div class="info-contato">
+                    <h3>Informações de contato</h3>
+                    <p class="text">
+                        Estamos ansiosos para ouvir de você! Entre em contato conosco e descubra como nossas soluções podem transformar seu negócio e impulsionar seu sucesso! Vamos conversar e encontrar a melhor solução para você?
+                    </p>
+                    <div class="list">
+                        <!--
+                        <div class="contact">
+                            <img class="icon-contact" src="{% static 'img/telefone.svg' %}" alt="">
+                            <a href="tel:+5511947973027">
+                                (11) 94797-3027
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <img class="icon-contact" src="{% static 'img/whatsapp.png' %}" alt="">
+                            <a href="https://wa.me/5511947973027" target="_blank">
+                                (11) 94797-3027
+                            </a>
+                        </div>
+                        -->
+                        
+                        <div class="contact">
+                            <img class="icon-contact" src="{% static 'img/email.svg' %}" alt="">
+                            <a href="mailto:administrativo@pharmaexpressmed.com.br" target="_blank">
+                                administrativo@pharmaexpressmed.com.br
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="redes-div">
+                    <h3 class="subtitle-contact">Siga  nossas redes sociais</h3>
+                    <div class="redes">
+                        <a href="https://www.instagram.com/enjoysolucoesmedicas/" target="_blank">
+                            <img class="icon-contact" src="{% static 'img/instagram.svg' %}" alt="">
+                        </a>
+                    </div>
+                </div>
+                -->
+                <div class="endereco-div">
+                    <h3 class="subtitle-contact">Endereço</h3>
+                    <div class="list">
+                        <div class="contact">
+                            <img class="icon-contact" src="{% static 'img/address-icon.png' %}" alt="">
+                            <a href="https://maps.app.goo.gl/iH32dxPBQbziKdor5" target="_blank">
+                                Rua Lafaiete Francisco Dos Santos, 153 - 2º Andar Sala 211 B
+                                <br>
+                                Centro - Lauro de Freitas/BA
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <img class="icon-contact" src="{% static 'img/wall-clock.png' %}" alt="">
+                            <p>
+                                Horário de Funcionamento: das 8h às 17h
+                            </p>
+                        </div>
+                    </div>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1715383536466!2d-38.33491972956153!3d-12.896688930460872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161616e5ada9e1%3A0xcbe84545602a15a1!2sFrancisco%20Dos%20Santos%2C%20153%20-%20Centro%2C%20Lauro%20de%20Freitas%20-%20BA%2C%2042703-100!5e0!3m2!1spt-BR!2sbr!4v1726061457591!5m2!1spt-BR!2sbr" width="310" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="form-contact">
+                <h3>Entre em contato!</h3>
+                <div class="line"></div>
+                <p class="text">
+                    Insira seus dados e envie uma mensagem para falar com a gente ou tirar dúvidas.
+                </p>
+                <div class="fale-conosco">
+                    <form class="form" id="form-cad" enctype="multipart/form-data" action="{% url 'contato' %}" method="POST" role="form">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div class="form-control">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" class="input" name="name" placeholder="Nome">
+                            <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                            <i class="fa-solid fa-circle-check icon-success" style="color: #328146;"></i>
+            
+                            <small class="message"></small>
+                        </div>
+            
+                        <div class="container-middle">
+                            <div class="form-control">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" class="input" name="email" placeholder="E-mail">
+                                <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                                <i class="fa-solid fa-circle-check icon-success" style="color: #328146;"></i>
+                
+                                <small class="message"></small>
+                            </div>
+                            <div class="form-control">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" id="telefone" maxlength="14" minlength="11" class="input" name="telefone" placeholder="(ddd) 99999-9999">
+                                <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                                <i class="fa-solid fa-circle-check icon-success" style="color: #328146;"></i>
+                
+                                <small class="message"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" class="input" name="assunto" placeholder="Assunto">
+                            <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                            <i class="fa-solid fa-circle-check icon-success" style="color: #328146;"></i>
+            
+                            <small class="message"></small>
+                        </div>
+            
+                        <div class="form-control">
+                            <label for="message">Mensagem</label>
+                            <textarea name="mensagem" id="message" class="input" cols="30" rows="10"
+                                placeholder="Digite sua mensagem"></textarea>
+                            <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                            <i class="fa-solid fa-circle-check icon-success hidden" style="color: #328146;"></i>
+                            <small class="message">Mensagem de Erro</small>
+                        </div>
+            
+                        <div class="result">
+                            <p class="result-text">
+                                {% if messages %}
+                                    {% for message in messages %}
+                                        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                                            <div class="alert alert-danger">
+                                                <strong>Erro!</strong>
+                                                {{ message }}
+                                                <i class="fa -solid fa-circle-exclamation icon-error" style="color: #b00c0c;"></i>
+                                            </div>
+                                        {% else %}
+                                            <div class="alert alert-success">
+                                                <strong>Sucesso!</strong>
+                                                {{ message }}
+                                                <i class="fa-solid fa-circle-check icon-success hidden" style="color: #328146;"></i>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="button-box">
+                            <button type="submit" data-button class="btn-light-blue">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock content%}
+{% block script %}
+    <script src="{% static 'js/formValidation.js' %}"></script>
+{% endblock script %}
