@@ -159,10 +159,8 @@
 {% block content %}
     <main>
         <section class="banner-inicial">
-            <div class="img-banner">
-            </div>
             <div class="banner-item funcionarios">
-                <h1>Com agilidade entregando <b class="dark-blue">saúde</b> e <b class="dark-blue">bem-estar</b> até você, para que você possa desfrutar de uma vida com mais <b class="dark-blue">energia</b> e <b class="dark-blue">felicidade</b>.</h1>
+                <h1>Com agilidade entregando <b class="red">saúde</b> e <b class="red">bem-estar</b> até você, para que você possa desfrutar de uma vida com mais <b class="red">energia</b> e <b class="red">felicidade</b>.</h1>
             </div>
         </section>
 
@@ -170,14 +168,19 @@
             <div class="quem-text text">
                 <h1 class="title">Sobre Nós</h1>
                 <div class="line"></div>
-                <p>Somos uma distribuidora de medicamentos dedicada
-                a fornecer produtos farmacêuticos com rapidez, eficiência e
-                confiabilidade. Com uma rede logística ágil e um compromisso
-                inabalável com a saúde e o bem-estar, a Pharma Express se
-                posiciona como um parceiro estratégico, garantindo que os medicamentos 
-                cheguem a tempo e em perfeitas condições e atendendo às necessidades urgentes do
-                mercado de saúde.</p>
-                <button class="btn-azul" onclick="window.location.href ='{% url 'sobre-nos' %}'">Veja mais</button>
+                <p>
+                    Descomplicamos o processo de transporte, para que você possa economizar tempo e recursos.
+                </p>
+                <p>
+                    Na Transportadora São Sebastião, pensamos que cada carga é única, assim como suas
+                    necessidades.
+                </p>
+                <p>  
+                    Oferecemos soluções de transporte personalizadas para atender às suas necessidades
+                    especificas, garantindo que suas mercadorias cheguem ao seu destino com eficiência e
+                    facilidade, para que você possa se concentrar no que faz de melhor.
+                </p>
+                <button class="btn-gray" onclick="window.location.href ='{% url 'sobre-nos' %}'">Veja mais</button>
             </div> 
             <div class="sobre">
                 <img class="sobre-img" src="{% static 'img/Sobre.jpeg' %}">
@@ -215,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn-cyan margin-10" type="submit" onclick="window.location.href ='{% url 'servicos' %}'">Conheça Nossos Servicos</button>
+                <button class="btn-red margin-10" type="submit" onclick="window.location.href ='{% url 'servicos' %}'">Conheça Nossos Servicos</button>
             </div>
         </div>
 

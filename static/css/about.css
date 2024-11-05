@@ -20,7 +20,7 @@
 }
 
 .section.about .line {
-    border: 1px solid #34ABB7;
+    border: 1px solid #EE3442;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -71,7 +71,7 @@
 }
 
 .principio{
-    background-color: #34ABB7;
+    background-color: #EE3442;
     background-image: url(../img/Grafismo2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +88,7 @@
 .principio h4{
     align-self: center;
     font-size: 18px;
-    color: #223874;
+    color: #2E2F33;
     margin-bottom: 15px;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .text-box .text{
-    color: #223874;
+    color: #2E2F33;
 }
 
 .section.about.gray{
@@ -143,6 +143,6 @@
 .text-box .title{
     font-weight: 900;
     max-width: 85%;
-    color: #223874;
+    color: #2E2F33;
     margin: 0;
 }

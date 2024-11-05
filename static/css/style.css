@@ -17,7 +17,7 @@ p{
 header{
     min-height: 90px;
     width: 100%;
-    background-color: #fff;
+    background-color: #26272B;
     position: fixed;
     z-index: 10000;
     transition: 1s all ease;
@@ -39,7 +39,7 @@ header .container-fluid{
 }
 
 .nav-link{
-    color: #34ABB7;
+    color: #fff;
     transition: all ease 1s;
     text-align: center;
 }
@@ -49,7 +49,7 @@ header .container-fluid{
 }
 
 .nav-link:hover{
-    color: #223874;
+    color: #EE3442;
     transform: scale(1.1);
 }
 
@@ -87,7 +87,7 @@ footer{
     position: relative;
     z-index: 999;
     align-self: flex-end;
-    background-color: #fff;
+    background-color: #26272B;
     color: #81CCDE;
     box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
 }
@@ -106,7 +106,7 @@ footer .container{
 }
 
 h2.title-footer{
-    color: #34ABB7;
+    color: #EE3442;
     font-weight: 700;
     font-size: 24px;
     margin-left: 30px;
@@ -114,7 +114,7 @@ h2.title-footer{
 }
 
 h3.title-footer{
-    color: #34ABB7;
+    color: #EE3442;
     font-weight: 700;
     font-size: 15px;
     margin-left: 30px;
@@ -130,7 +130,7 @@ h3.title-footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #34ABB7;
+    background-color: #EE3442;
     color: #fff;
     font-weight: 900;
     padding: 40px 5%;
@@ -146,12 +146,12 @@ h3.title-footer{
 
 footer .contact p{
     font-size: 14px;
-    color: #223874;
+    color: #fff;
 }
 
 .contact p{
     font-size: 14px;
-    color: #223874;
+    color: #26272B;
     font-weight: 900;
 }
 
@@ -159,13 +159,13 @@ footer .contact p{
     max-width: 455px;
     width: 100%;
     font-size: 14px;
-    color: #223874;
+    color: #fff;
     text-decoration: none;
 }
 
 .contact a{
     font-size: 14px;
-    color: #223874;
+    color: #26272B;
     text-decoration: none;
     font-weight: 900;
     transition: all ease .2s;
@@ -173,12 +173,12 @@ footer .contact p{
 
 
 .contact a:hover{
-    color: #81CCDE;
+    color: #EE3442;
     text-decoration: none;
 }
 
 footer .contact a:hover{
-    color: #81CCDE;
+    color: #EE3442;
     text-decoration: none;
 }
 
@@ -196,7 +196,7 @@ footer .contact a:hover{
 }
 
 .division.right{
-    border-left: 1px solid #81CCDE;
+    border-left: 1px solid #EE3442;
     padding-left: 10%;
 }
 
@@ -211,7 +211,7 @@ footer .contact a:hover{
 
 .banner-inicial{
     position: relative;
-    background-color: #81CCDE;
+    background-color: #ED3D4C;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -260,19 +260,21 @@ footer .contact a:hover{
 
 .banner-item{
     position: relative;
-    background-color: #34ABB7;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 120%), url(../img/caminhao.png) ;
+    background-color: #EE3442;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
-    padding: 180px 10% 120px;
+    padding: 220px 10% 120px;
     z-index: 999;
-    clip-path: ellipse(90% 70% at 50% 30%);
+    clip-path: ellipse(55% 70% at 50% 30%);
 }
 
 .banner-inicial h1{
@@ -290,7 +292,7 @@ footer .contact a:hover{
     align-items: center;
     padding: 0% 10% 3%;
     position: relative;
-    background-color: #81CCDE;
+    background-color: #ED3D4C;
     min-height: 650px;
 }
 
@@ -319,20 +321,20 @@ footer .contact a:hover{
 .quem-text h1{
     font-weight: 900;
     font-size: 40px;
-    color: #223874;
+    color: #2E2F33;
     justify-self: center;
 }
 
 .quem-text .line{
     width: 40%;
-    border: 2px #34ABB7 solid;
+    border: 2px #2E2F33 solid;
     margin-bottom: 30px;
     justify-self: center;
 }
 
 .quem-text p{
     font-size: 15px;
-    color: #223874;
+    color: #46474D;
     text-align: justify;
 }
 
@@ -351,18 +353,18 @@ img{
 
 .servicos h2{
     font-size: 32px;
-    color: #223874;
+    color: #2E2F33;
     font-weight: 900;
 }
 
 .servicos .line{
     width: 30%;
     margin-bottom: 30px;
-    border: 1px solid #34ABB7;
+    border: 1px solid #EE3442;
 }
 
 .servicos p{
-    color: #223874;
+    color: #2E2F33;
     font-size: 16px;
 }
 
@@ -429,7 +431,7 @@ img{
     align-items: center;
     width: 100%;
     aspect-ratio: 1/0.34;
-    background-color: #34ABB7;
+    background-color: #EE3442;
     padding: 20px 20px;
     border-radius: 0 0 15px;
 }
@@ -487,19 +489,19 @@ img{
 .noticias .aviso{
     align-self: center;
     justify-self: center;
-    color: #223874;
+    color: #2E2F33;
 }
 
 .noticias h1{
     margin: 80px 10% 20px;
     font-size: 32px;
-    color: #223874;
+    color: #2E2F33;
 }
 
 .noticias .line{
     margin: 0px 10% 40px;
     width: 245px;
-    border: 1px solid #34ABB7;
+    border: 1px solid #EE3442;
 }
 
 .noticia h4{
@@ -561,7 +563,7 @@ img{
 .noticia:hover,
 .noticia:hover h4,
 .noticia:hover p {
-    color: #34ABB7;
+    color: #EE3442;
 }
 
 .thumb{
@@ -577,7 +579,7 @@ img{
 .dropdown {
     width: 100%;
     cursor: pointer;
-    color: #223874;
+    color: #2E2F33;
     font-weight: 900;
     font-size: 20px;
     padding: 10px;
@@ -587,7 +589,7 @@ img{
 }
 
 .dropdown:hover {
-    color: #34ABB7;
+    color: #EE3442;
 }
 
 .border{
@@ -620,7 +622,7 @@ img{
 }
 
 .doc-link:hover{
-    color: #223874;
+    color: #2E2F33;
     text-decoration: underline;
 }
 

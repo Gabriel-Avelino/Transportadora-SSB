@@ -100,7 +100,7 @@
 }
 
 .noticias-page .noticia div h4{
-    color: #223874;
+    color: #2E2F33;
     max-width: inherit;
 }
 
@@ -143,7 +143,7 @@
 .noticias-page .noticia:hover,
 .noticias-page .noticia:hover h4,
 .noticias-page .noticia:hover p {
-    color: #34ABB7;
+    color: #EE3442;
 }
 
 .noticias-page .noticia .categoria{

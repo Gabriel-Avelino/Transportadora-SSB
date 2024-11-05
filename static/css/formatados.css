@@ -3,8 +3,8 @@
     color: white;
 }
 
-.dark-blue{
-    color: #223874;
+.red{
+    color: #EE3442;
 }
 
 /*objetos*/
@@ -31,12 +31,12 @@
     padding: 15px 50px;
 }
 
-.btn-azul{
+.btn-gray{
     width: 105px;
     height: 43.75px;
     color: #fff;
     border: none;
-    background-color: #223874;
+    background-color: #2E2F33;
     border-radius: 50px;
     margin-top: 20px;
     font-size: 16px;
@@ -45,38 +45,18 @@
     transition: all ease .5s;
 }
 
-.btn-light-blue{
-    width: 105px;
-    height: 43.75px;
-    color: #fff;
-    border: none;
-    background-color: #81CCDE;
-    border-radius: 50px;
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 900;
-    cursor: pointer;
-    transition: all ease .5s;
-}
-
-.btn-light-blue:hover{
-    color: #81CCDE;
-    border: 1px solid #81CCDE;
+.btn-gray:hover{
+    color: #2E2F33;
+    border: 1px solid #2E2F33;
     background-color: #fff;
 }
 
-.btn-azul:hover{
-    color: #223874;
-    border: 1px solid #223874;
-    background-color: #fff;
-}
-
-.btn-cyan{
-    width: 250px;
-    height: 60px;
+.btn-red{
+    padding: 12px 30px;
     color: #fff;
     border: none;
-    background-color: #34ABB7;
+    background-color: #EE3442;
+    border: 1px solid #EE3442;
     border-radius: 50px;
     margin-top: 20px;
     font-size: 16px;
@@ -85,9 +65,8 @@
     transition: all ease .5s;
 }
 
-.btn-cyan:hover{
-    color: #34ABB7;
-    border: 1px solid #34ABB7;
+.btn-red:hover{
+    color: #EE3442;
     background-color: #fff;
 }
 
