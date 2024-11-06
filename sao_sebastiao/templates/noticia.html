@@ -39,7 +39,7 @@
                     <div class="fotos">
                         <button class="foto-controls controls-previous"></button>
                         <div class="fotos-galery galery-wrapper">
-                            <div class="galery">
+                            <div class="galery foto-galery">
                                 {% for foto in fotos %}
                                     <div class="foto item2 {% if forloop.first %}current-item{% endif %}">
                                         <img src="{{ foto.file.url  }}" alt="">

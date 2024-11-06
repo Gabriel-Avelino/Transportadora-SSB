@@ -290,10 +290,10 @@ footer .contact a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0% 10% 3%;
+    padding: 0% 10% 50px;
     position: relative;
     background-color: #ED3D4C;
-    min-height: 650px;
+    min-height: 565px;
 }
 
 .sobre{
@@ -305,9 +305,9 @@ footer .contact a:hover{
 .sobre-img{
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
     z-index: 999;
-    object-fit: cover;
 }
 
 .quem-text{
@@ -334,7 +334,7 @@ footer .contact a:hover{
 
 .quem-text p{
     font-size: 15px;
-    color: #46474D;
+    color: #2E2F33;
     text-align: justify;
 }
 
@@ -703,7 +703,7 @@ img{
     width: 45%;
     font-size: 18px;
     font-weight: 600;
-    border: 1px #b22c2c solid;
+    border: 1px #EE3442 solid;
     margin: 5px 0 30px;
 }
 

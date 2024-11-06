@@ -4,20 +4,24 @@
     background-position-y: center;
 }
 
+.servico .servico-name {
+    cursor: pointer;
+}
+
 .atividades-destaque{
     padding: 5% 10% 10%;
 }
 
 .atividades-destaque h2{
     margin-bottom: 10px;
-    color: #b22c2c;;
+    color: #EE3442;
     font-weight: 900;
 }
 
 .atividades-destaque .line{
     margin-bottom: 50px;
     width: 40%;
-    border: 1px solid #b22c2c;
+    border: 1px solid #EE3442;
     min-width: 430px;
 }
 

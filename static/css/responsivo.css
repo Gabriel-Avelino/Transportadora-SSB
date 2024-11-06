@@ -65,9 +65,6 @@
 }
 
 @media (max-width:990px) {
-    .sobre-img{
-        height: 75%;
-    }
     .servicos{
         padding: 80px 5%;
     }
