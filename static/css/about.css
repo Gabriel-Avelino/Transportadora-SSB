@@ -1,5 +1,5 @@
 .sobre-banner{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/Sobre.jpeg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/sobre-banner.jpg);
     background-position-x: center;
     background-position-y: center;
 }
@@ -36,6 +36,7 @@
 .section.about .middle-img-text-left{
     left: -15%;
     top: 30%;
+    object-fit: cover;
 }
 
 .section.about .middle-img-text-right{
