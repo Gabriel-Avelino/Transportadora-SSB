@@ -1,7 +1,7 @@
 {% extends 'background.html' %}
 {% load static i18n %}
 {% block head_title %}
-    {% trans 'Serviços - Rockefeller Ambiental' %}
+    {% trans 'Serviços - Transportadora São Sebastião' %}
 {% endblock head_title %}
 {% block extra_head %}
     <link rel="stylesheet" href="{% static 'css/services.css' %}">
@@ -16,25 +16,25 @@
         <div class="section services">
             <div class="info servicos">
                 <div class="container">
-                    <div class="Limpeza servico click" onclick="togglePopUp()">
+                    <div class="Limpeza servico escalar click" onclick="togglePopUp()">
                         <div class="servico-img limpeza"></div>
                         <div class="servico-name">
                             <p>Limpeza Pública</p>
                         </div>
                     </div>
-                    <div class="Residuos servico click" onclick="togglePopUp()">
+                    <div class="Residuos servico escalar click" onclick="togglePopUp()">
                         <div class="servico-img residuos"></div>
                         <div class="servico-name">
                             <p>Gestão de Resíduos Sólidos</p>
                         </div>
                     </div>
-                    <div class="Socioambiental servico click" onclick="togglePopUp()">
+                    <div class="Socioambiental servico escalar click" onclick="togglePopUp()">
                         <div class="servico-img consciencia"></div>
                         <div class="servico-name">
                             <p>Consciência Socioambiental</p>
                         </div>
                     </div>
-                    <div class="Obra servico click" onclick="togglePopUp()">
+                    <div class="Obra servico escalar click" onclick="togglePopUp()">
                         <div class="servico-img infraestrutura"></div>
                         <div class="servico-name">
                             <p>Obras de Infraestrutura</p>
@@ -112,25 +112,6 @@
                     </div>
             </section>
         </div>
-        <section class="atividades-destaque">
-            <h2>Atividades de Destaque</h2>
-            <div class="line"></div>
-            <h3>Limpeza Urbana</h3>
-            <p>A limpeza urbana é fundamental para a saúde pública e o bem-estar das comunidades. Na Rockefeller Ambiental utilizamos tecnologias avançadas e práticas sustentáveis para garantir que nossas cidades permaneçam limpas e organizadas. Nossos serviços incluem:</p>
-            <ul>
-                <li><b>Coleta e Destinação de Resíduos:</b> Realizamos a coleta eficiente e responsável de resíduos sólidos, com foco na reciclagem e na destinação adequada de materiais descartáveis, contribuindo para a redução do impacto ambiental.</li>
-                <li><b>Varrição e Manutenção de Vias Públicas:</b> Nossas equipes estão equipadas para executar a varrição manual e mecanizada das ruas, garantindo que todos os espaços urbanos sejam mantidos limpos e agradáveis.</li>
-                <li><b>Limpeza de Espaços Públicos:</b> Praças, parques e áreas de lazer são constantemente monitorados e limpos, proporcionando ambientes seguros e convidativos para toda a população.</li>
-            </ul>
-            <h3>Asfaltos</h3>
-            <p>A infraestrutura viária é vital para o desenvolvimento urbano e econômico. Nossa atuação na área de asfalto é focada na durabilidade e qualidade, sempre priorizando técnicas que minimizem os impactos ambientais. Entre os serviços que oferecemos estão:</p>
-            <ul>
-                <li><b>Pavimentação e Recapeamento:</b> Realizamos a pavimentação de novas vias e o recapeamento de ruas e avenidas existentes, utilizando materiais de alta qualidade que garantem maior durabilidade e resistência ao tráfego intenso.</li>
-                <li><b>Manutenção de Vias:</b> Nossa equipe especializada executa reparos e manutenção em pavimentos deteriorados, assegurando que as vias permaneçam seguras e em boas condições de uso.</li>
-                <li><b>Sinalização Viária:</b> Complementamos nossos serviços de pavimentação com a instalação de sinalização horizontal e vertical, essencial para a organização do trânsito e a segurança dos motoristas e pedestres.</li>
-            </ul>
-            <p>Na Rockefeller Ambiental, transformamos as cidades em locais melhores para  viver. Se você deseja saber mais sobre nossos serviços de Limpeza Urbana e Asfalto, ou se precisa de uma solução personalizada para sua comunidade, entre em contato conosco. Juntos, podemos construir um futuro mais limpo e sustentável.</p>
-        </section>
     </main>
 {% endblock content%}
 {% block script %}

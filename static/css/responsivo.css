@@ -49,19 +49,6 @@
         max-width: 275px;
         margin-left: 70%;
     }
-    .section.about .middle-img-text-right {
-        background-image: url(../img/motorista.jpg);
-        background-position: right 0;
-        background-size: cover;
-        right: -7%;
-        top: -9%;
-        width: 45%;
-    }
-
-    .section.about .middle-img-text-left {
-        left: -15%;
-        top: 40%;
-    }
 }
 
 @media (max-width:990px) {
@@ -75,9 +62,6 @@
     .beneficios{
         display: flex;
         flex-direction: column;
-    }
-    .middle-image{
-        border-radius: 30px;
     }
     .grafismo{
         width: 50%;
@@ -265,14 +249,6 @@
         background-color: #A5A4A4;
         padding:  0 0 10%;
     }
-    .section.about .middle-img-text-left{
-        position: inherit;
-        width: 100%;
-    }
-    .section.about .middle-img-text-right{
-        position: inherit;
-        width: 100%;
-    }
     .section.about{
         padding: 80px 10%;
         flex-direction: column-reverse;
@@ -290,10 +266,6 @@
     }
     .quem-text{
         padding: 10% 0 10% 0%;
-    }
-
-    .middle-image{
-        width: 85%;
     }
     .representantes{
         flex-direction: column;
@@ -373,10 +345,6 @@
 
     .principio {
         padding: 10%;
-    }
-
-    .middle-image.border{
-        width: 70%;
     }
 
     .post{

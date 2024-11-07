@@ -36,7 +36,7 @@ def transparencia(request):
     ordered_documents = OrderedDict([
         ("Alvará de Funcionamento", []),
         ("Atestados de Capacidade Técnica", []),
-        ("Regularidade Fiscal Matriz - Vitória da Conquista/BA", []),
+        ("Regularidade Fiscal Matriz", []),
         # Adicione mais tipos de documentos conforme necessário
     ])
     

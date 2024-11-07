@@ -77,17 +77,6 @@
     transition: all ease .2s;
 }
 
-.middle-image {
-    min-width: 40%;
-    width: 100%;
-    border-radius: 0 30px 30px 0;
-    aspect-ratio: 1 / 0.8;
-}
-
-.middle-image.border {
-    aspect-ratio: 1 / 0.7;
-}
-
 .icon-footer{
     width: 25px;
 }
@@ -97,6 +86,13 @@
     flex-direction: row;
     justify-content: center;
     width: 150px;
+}
+
+.middle-image {
+    min-width: 40%;
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+    aspect-ratio: 1 / 0.8;
 }
 
 .redes .icon-footer{

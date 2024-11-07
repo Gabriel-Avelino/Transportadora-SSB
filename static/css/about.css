@@ -13,7 +13,7 @@
     position: relative;
     width: 100%;
     display: flex;
-    padding: 0 10%;
+    padding: 80px 10%;
     gap: 5%;
     justify-content: space-between;
     overflow: hidden;
@@ -27,33 +27,8 @@
 
 .section.about .middle-img-text {  
     width: 50%;
-    max-width: 600px;
-    aspect-ratio: 1/1;
-    position: absolute;
-    border-radius: 100%;
-}
-
-.section.about .middle-img-text-left{
-    left: -15%;
-    top: 30%;
-    object-fit: cover;
-}
-
-.section.about .middle-img-text-right{
-    background-image: url(../img/motorista.jpg);
-    background-position: right 0;
-    position: absolute;
-    width: 40%;
-    aspect-ratio: 1/1;
-    border-radius: 100%;
-    right: -10%;
-    top: -25%;
-    height: auto;
-}
-
-.section.about .about-text-img{
-    flex: 1;
-    aspect-ratio: 1/1;
+    height: 45%;
+    border-radius: 10px;
 }
 
 .section.ideais {
@@ -73,7 +48,6 @@
 
 .principio{
     background-color: #EE3442;
-    background-image: url(../img/Grafismo2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70px;
@@ -116,7 +90,6 @@
 .section.about .text-box{
     z-index: 999;
     background-color: #fff;
-    padding: 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,8 +104,8 @@
 
 .section.about.gray{
     min-height: 500px;
-    align-content: center;
-    padding: 0% 10% 0;
+    align-items: center;
+    padding: 80px 10%;
     background-color: #A5A4A4;
     flex-direction: row;
 }

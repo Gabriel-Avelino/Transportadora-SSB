@@ -1,7 +1,7 @@
 .contato-banner{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/Contato.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(../img/entregador2.jpg);
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: start;
 }
 
 .contato{
