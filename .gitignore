@@ -1,1 +1,9 @@
 venv
+.env
+db.sqlite3
+sao_sebastiao/__pycache__
+sao_sebastiao/migrations/__pycache__
+blog/__pycache__
+blog/migrations/__pycache__
+core/__pycache__
+media

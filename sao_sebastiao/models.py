@@ -8,9 +8,17 @@ from unicodedata import normalize
 def uploadFotoImovel(instance, filename):
     return 'imoveis/{}-{}'.format(str(uuid.uuid4()), filename)
 
+class Tipo_doc (models.Model):
+    name = models.CharField(max_length=255)
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural = "Tipos docs"
+
 class Documento (models.Model):
     name_doc = models.CharField(max_length=255)
-    tipo = models.CharField(max_length=255)
+    tipo = models.ForeignKey(Tipo_doc, on_delete=models.CASCADE)
     file = models.FileField(upload_to='documents')
 
     def __str__(self):
