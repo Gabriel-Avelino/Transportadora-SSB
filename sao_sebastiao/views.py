@@ -44,7 +44,7 @@ def transparencia(request):
     
     # Organiza os documentos de acordo com o tipo esperado
     for document in documentos:
-        tipo_documento = document.tipo
+        tipo_documento = document.tipo.name
         # Verifica se o tipo de documento está nos tipos ordenados
         if tipo_documento in ordered_documents:
             ordered_documents[tipo_documento].append(document)
